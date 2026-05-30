@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivam — Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="#home">S.</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#ai-workflow">AI Workflow</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="dark-toggle" id="themeToggle" title="Toggle theme"><i class="fa fa-sun"></i></button>
+    <button class="btn-resume" onclick="alert('Resume download would start here.')"><i class="fa fa-download"></i> Resume</button>
+  </div>
+  <button class="hamburger" id="hamburger"><i class="fa fa-bars"></i></button>
+</nav>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <h1 class="hero-name">Hi, I'm <span class="accent">Shivam.</span></h1>
+    <p class="hero-title">Web Developer</p>
+    <p class="hero-intro">
+      Web development with hands-on experience building modern web applications using React.js, Angular.js, and Node.js. Passionate about creating scalable, user-friendly, and high-performance web solutions. Currently pursuing engineering while actively learning and developing projects in web development.
+    </p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})">View My Work</button>
+      <button class="btn-ghost" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Projects Built</div></div>
+      <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Tech Skills</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">AI Tools Used</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ ABOUT ════════════════ -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <div class="about-avatar">🧑‍💻</div>
+      <div class="about-tag"><i class="fa fa-location-dot"></i> India · Available Remotely</div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <h2 class="section-title">About Me</h2>
+      <div class="divider"></div>
+      <ul class="about-info-list">
+        <li><i class="fa fa-graduation-cap"></i><span><strong>Education:</strong> Pursuing a degree in Computer Science and Design / Web Technologies, with a focus on modern development practices.</span></li>
+        <li><i class="fa fa-bullseye"></i><span><strong>Career Goal:</strong> To become a Web developer who leverages AI to build smarter, more impactful products.</span></li>
+        <li><i class="fa fa-heart"></i><span><strong>Interests:</strong> UI/UX design, API integrations, open-source contribution, and the future of human–AI collaboration.</span></li>
+        <li><i class="fa fa-robot"></i><span><strong>Learning Style:</strong> I use AI tools to rapidly understand new concepts, debug code in real-time, and iterate on design feedback — accelerating my growth significantly.</span></li>
+      </ul>
+      <div class="ai-learning-card">
+        <div class="card-head"><i class="fa fa-wand-magic-sparkles"></i> How AI Accelerates My Learning</div>
+        <p>I use Claude AI to understand complex coding concepts, debug tricky alignment issues, suggest color palettes, and review my projects before deployment. AI isn't replacing my thinking — it's amplifying it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ SKILLS ════════════════ -->
+<section id="skills">
+  <div class="section-label reveal">Skills & Tools</div>
+  <h2 class="section-title reveal">What I Work With</h2>
+  <div class="divider reveal"></div>
+  <div class="skills-grid">
+    <!-- Technical Skills -->
+    <div class="reveal">
+      <div class="skills-col-title"><i class="fa fa-code"></i> Technical Skills</div>
+      <div class="skill-item">
+        <div class="skill-meta"><span>HTML5</span><span class="skill-pct">90%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-pct="90"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-meta"><span>CSS3</span><span class="skill-pct">85%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-pct="85"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-meta"><span>Bootstrap</span><span class="skill-pct">80%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-pct="80"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-meta"><span>JavaScript</span><span class="skill-pct">75%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-pct="75"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-meta"><span>Git &amp; GitHub</span><span class="skill-pct">70%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-pct="70"></div></div>
+      </div>
+    </div>
+    <!-- AI Tools -->
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="skills-col-title"><i class="fa fa-robot"></i> AI Tools I Use</div>
+      <div class="tool-cards">
+        <div class="tool-card"><i class="fa fa-comment-dots"></i> ChatGPT</div>
+        <div class="tool-card"><i class="fa fa-wand-magic-sparkles"></i> Claude AI</div>
+        <div class="tool-card"><i class="fa fa-code"></i> GitHub Copilot</div>
+        <div class="tool-card"><i class="fa fa-paintbrush"></i> Midjourney</div>
+        <div class="tool-card"><i class="fa fa-magnifying-glass"></i> Perplexity AI</div>
+        <div class="tool-card"><i class="fa fa-bolt"></i> v0 by Vercel</div>
+      </div>
+      <div class="ai-learning-card" style="margin-top:1.8rem">
+        <div class="card-head"><i class="fa fa-chart-line"></i> AI-Assisted Growth</div>
+        <p>Each AI tool serves a purpose in my workflow — from brainstorming and drafting to code review and design refinement. Using AI strategically has compressed months of learning into weeks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PROJECTS ════════════════ -->
+<section id="projects">
+  <div class="section-label reveal">My Work</div>
+  <h2 class="section-title reveal">Featured Projects</h2>
+  <div class="divider reveal"></div>
+  <div class="section-desc reveal">
+    Three projects built from scratch, demonstrating front-end skills and real-world problem solving with AI assistance at every stage.
+  </div>
+  <div class="projects-grid">
+    <!-- Project 1: Rock Paper Scissors -->
+    <div class="project-card reveal">
+      <div class="project-thumb sms">✊</div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <h3 class="project-title">Rock, Paper, Scissors Game</h3>
+        <p class="project-desc">
+          A classic hand game recreated digitally. The user selects one of three options and the computer randomly selects one as well, then determines the winner based on the rules: Rock beats Scissors, Paper beats Rock.
+        </p>
+        <ul class="project-features">
+          <li>Player vs. computer with random AI selection</li>
+          <li>Win/loss/draw logic with live score tracking</li>
+          <li>Animated choice reveal &amp; result display</li>
+          <li>Responsive, interactive UI</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="proj-btn primary"><i class="fa fa-eye"></i> Live Demo</a>
+          <a href="#" class="proj-btn ghost"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <!-- Project 2: Predictive Hospital Resource Emergency -->
+    <div class="project-card reveal" style="transition-delay:.1s">
+      <div class="project-thumb weather">🏥</div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">PHP</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <h3 class="project-title">Predictive Hospital Resource Emergency</h3>
+        <p class="project-desc">
+          A data-driven web system that predicts emergency admissions, ICU demand, and staff workflow surges using historical hospital data, local health trends, and environmental &amp; seasonal factors.
+        </p>
+        <ul class="project-features">
+          <li>Predict emergency admissions &amp; ICU demand</li>
+          <li>Staff workflow surge forecasting</li>
+          <li>Inventory management for medicines &amp; equipment</li>
+          <li>Environmental &amp; seasonal factor analysis</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="proj-btn primary"><i class="fa fa-eye"></i> Live Demo</a>
+          <a href="#" class="proj-btn ghost"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <!-- Project 3: Two-Dice Game -->
+    <div class="project-card reveal" style="transition-delay:.2s">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #1a1060, #3730a3);">🎲</div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <h3 class="project-title">Two-Dice Game</h3>
+        <p class="project-desc">
+          A simple, interactive web-based game where two dice are rolled randomly on button click. JavaScript generates random values, compares dice scores, and declares the winner — with smooth animations and responsive design.
+        </p>
+        <ul class="project-features">
+          <li>Random number generation (1–6 per die)</li>
+          <li>DOM manipulation &amp; event handling</li>
+          <li>Visual dice display with animations</li>
+          <li>Responsive layout &amp; beginner-friendly code</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="proj-btn primary"><i class="fa fa-eye"></i> Live Demo</a>
+          <a href="#" class="proj-btn ghost"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ AI WORKFLOW ════════════════ -->
+<section id="ai-workflow">
+  <div class="workflow-intro">
+    <div class="section-label reveal">AI Integration</div>
+    <h2 class="section-title reveal">How AI Supports<br>My Dev Process</h2>
+    <div class="divider reveal"></div>
+    <p class="section-desc reveal">
+      AI isn't just a tool I mention — it's woven into every stage of how I plan, design, build, and ship. Here's exactly how.
+    </p>
+  </div>
+  <div class="workflow-grid">
+    <div class="workflow-card reveal">
+      <div class="wf-step">Step 01</div>
+      <div class="wf-icon">🗺️</div>
+      <div class="wf-title">Planning</div>
+      <div class="wf-desc">Claude AI helped structure the site architecture, define section order, and draft the user journey. I described my goal, and AI helped me prioritize what mattered most for an evaluator.</div>
+      <div class="wf-tags"><span class="wf-tag">Sitemap</span><span class="wf-tag">UX Flow</span><span class="wf-tag">Content Strategy</span></div>
+    </div>
+    <div class="workflow-card reveal" style="transition-delay:.1s">
+      <div class="wf-step">Step 02</div>
+      <div class="wf-icon">🎨</div>
+      <div class="wf-title">Design</div>
+      <div class="wf-desc">AI suggested color palettes, typography pairings, spacing systems, and card layouts. It compared multiple design directions and explained which aesthetic choices would feel modern and professional.</div>
+      <div class="wf-tags"><span class="wf-tag">Color Theory</span><span class="wf-tag">Typography</span><span class="wf-tag">Layout</span></div>
+    </div>
+    <div class="workflow-card reveal" style="transition-delay:.2s">
+      <div class="wf-step">Step 03</div>
+      <div class="wf-icon">🔧</div>
+      <div class="wf-title">Debugging</div>
+      <div class="wf-desc">When CSS animations broke on mobile or flexbox alignment failed, I pasted the code into Claude and got precise fixes with explanations. This cut debugging time by over 60%.</div>
+      <div class="wf-tags"><span class="wf-tag">CSS Fixes</span><span class="wf-tag">Responsiveness</span><span class="wf-tag">JS Errors</span></div>
+    </div>
+    <div class="workflow-card reveal" style="transition-delay:.3s">
+      <div class="wf-step">Step 04</div>
+      <div class="wf-icon">✅</div>
+      <div class="wf-title">Review</div>
+      <div class="wf-desc">Before submission, Claude reviewed the completed portfolio for accessibility gaps, semantic HTML improvements, and deployment readiness — acting as a senior developer peer review.</div>
+      <div class="wf-tags"><span class="wf-tag">Accessibility</span><span class="wf-tag">SEO</span><span class="wf-tag">Deployment Checklist</span></div>
+    </div>
+  </div>
+  <div class="ai-banner reveal">
+    <div class="ai-banner-icon">🤖</div>
+    <div class="ai-banner-text">
+      <h3>AI as a Learning Accelerator, Not a Shortcut</h3>
+      <p>
+        Every AI suggestion I received, I studied and understood before implementing. The goal was never to let AI do the work — it was to use AI to learn faster, think deeper, and build better than I could alone.
+        This portfolio is evidence of that approach.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section id="contact">
+  <div class="section-label reveal">Get In Touch</div>
+  <h2 class="section-title reveal">Let's Connect</h2>
+  <div class="divider reveal"></div>
+  <div class="contact-grid">
+    <div class="reveal">
+      <div class="contact-info">
+        <h3>I'd love to hear from you.</h3>
+        <p>Whether you have a project in mind, a question about my work, or just want to talk tech and AI — my inbox is always open.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:shivampatankar200@gmail.com" class="contact-link">
+          <div class="link-icon"><i class="fa fa-envelope"></i></div>
+          <div class="link-text">
+            <div class="link-label">Email</div>
+            <div class="link-val">shivampatankar200@gmail.com</div>
+          </div>
+          <i class="fa fa-arrow-right link-arrow"></i>
+        </a>
+        <a href="tel:+917972054580" class="contact-link">
+          <div class="link-icon"><i class="fa fa-phone"></i></div>
+          <div class="link-text">
+            <div class="link-label">Contact No</div>
+            <div class="link-val">+91 7972054580</div>
+          </div>
+          <i class="fa fa-arrow-right link-arrow"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shivam-patankar-7a96b4355" target="_blank" class="contact-link">
+          <div class="link-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div class="link-text">
+            <div class="link-label">LinkedIn</div>
+            <div class="link-val">linkedin.com/in/shivam-patankar-7a96b4355</div>
+          </div>
+          <i class="fa fa-arrow-right link-arrow"></i>
+        </a>
+        <a href="https://github.com/shivampatankar16" target="_blank" class="contact-link">
+          <div class="link-icon"><i class="fab fa-github"></i></div>
+          <div class="link-text">
+            <div class="link-label">GitHub</div>
+            <div class="link-val">github.com/shivampatankar16</div>
+          </div>
+          <i class="fa fa-arrow-right link-arrow"></i>
+        </a>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Alex">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Johnson">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="alex@example.com">
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Project collaboration">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project or what you'd like to discuss..."></textarea>
+        </div>
+        <button class="form-submit" onclick="alert('Message sent! (Demo only)')"><i class="fa fa-paper-plane"></i> &nbsp;Send Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-copy">© 2026 Shivam. Built with 💙 &amp; AI assistance.</p>
+  <div class="footer-socials">
+    <a href="https://github.com/shivampatankar16" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/shivam-patankar-7a96b4355" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="mailto:shivampatankar200@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTop" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
+ 
